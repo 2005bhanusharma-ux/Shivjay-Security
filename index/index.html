@@ -636,15 +636,10 @@
         }
 
         .about-image {
-            min-height: 470px;
-            background:
-                linear-gradient(
-                    rgba(7,26,43,0.08),
-                    rgba(7,26,43,0.08)
-                ),
-                url("images/about.jpeg") center/cover;
+            width: 100%;
+            height: auto;
             border-radius: 8px;
-            position: relative;
+            object-fit: contain;
         }
 
         .experience-box {
@@ -1455,10 +1450,6 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .about-image {
-                min-height: 350px;
-            }
-
             .experience-box {
                 right: 15px;
             }
@@ -1665,7 +1656,11 @@
 
     <div class="container about-grid">
 
-        <div class="about-image"></div>
+        <img
+            class="about-image"
+            src="images/about.jpeg"
+            alt="Shivjay Security team and operations"
+        >
 
 
         <div class="about-content">
